@@ -1,0 +1,116 @@
+.title {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background: #fff;
+  font-size: 28px;
+  color: #464747;
+  text-align: center;
+  position: relative; }
+  .title .openNav {
+    position: absolute;
+    left: 18px;
+    top: -2px; }
+
+.notice {
+  height: 35px;
+  line-height: 35px;
+  background: #fff;
+  border-top: none;
+  padding: 0 22px;
+  box-sizing: border-box;
+  margin: 6px 1% 0 1%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #d2d2d2;
+  border-bottom: none; }
+  .notice #noticeList {
+    height: 35px;
+    width: 100%;
+    position: relative; }
+    .notice #noticeList li {
+      width: 200%;
+      display: block;
+      color: #ff0000; }
+
+.con {
+  width: 98%;
+  height: 100%;
+  border-top: none;
+  position: relative;
+  margin: 0 auto; }
+  .con .conInfo {
+    color: #0fb74a;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    border-top: none;
+    height: 32vh;
+    box-sizing: border-box;
+    padding-top: 44px; }
+    .con .conInfo p {
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 12px; }
+    .con .conInfo .conAction {
+      padding-bottom: 40px;
+      position: relative; }
+      .con .conInfo .conAction input {
+        width: 80%;
+        border: 1px solid #b8b8b8;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        font-size: 16px;
+        color: #333;
+        outline: none; }
+      .con .conInfo .conAction a {
+        width: 124px;
+        height: 36px;
+        display: block;
+        color: #fff;
+        margin: 0 auto;
+        line-height: 36px;
+        border-radius: 2px; }
+      .con .conInfo .conAction .downBtn {
+        background: #29c75f;
+        margin: 0 auto;
+        margin-top: 12px; }
+      .con .conInfo .conAction .sendEmail {
+        background: #fc8229; }
+      .con .conInfo .conAction .error {
+        color: #ff0000;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-top: 14px;
+        display: block; }
+  .con .btnBox {
+    height: 48vh;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    padding-top: 14px;
+    box-sizing: border-box;
+    margin-top: 10px; }
+    .con .btnBox .buyCode, .con .btnBox .buyUser, .con .btnBox .getCode {
+      width: 288px;
+      height: 78px;
+      border-radius: 3px;
+      text-align: center;
+      display: block;
+      line-height: 78px;
+      font-size: 22px;
+      letter-spacing: 5px;
+      color: #fff;
+      margin: 0 auto;
+      box-shadow: 2px 2px 1px #999; }
+    .con .btnBox .buyCode {
+      background: #29c75f; }
+    .con .btnBox .buyUser {
+      background: #39c3da;
+      margin: 26px auto; }
+    .con .btnBox .getCode {
+      background: #ffbc11; }

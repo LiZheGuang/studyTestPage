@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>小迪文库</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+    <link rel="stylesheet" href="css/mpublic.css" />
+    <link rel="stylesheet" href="css/jquery.pagination.css" />
+    <link rel="stylesheet" href="css/mperson.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="dialogEmail">
+        <h4>绑定邮箱:</h4>
+        <p>输入邮箱: <input type="text"></p>
+        <button>绑定</button>
+        <span>
+            绑定邮箱后可将邮箱作为账号登录本平台！</br>
+            并且支持下载文档直接发送到您绑定的邮箱！
+        </span>
+      </div>
+      <div class="dialogPassword">
+          <h4>修改密码:</h4>
+          <p>新密码: <input type="text"></p>
+          <button>修改</button>
+          <span>
+              密码修改后将只有您自己知道！修改后如果忘记，将无法找回</br>
+              请谨慎修改！
+          </span>
+        </div>
+        <ul class="nav close" id="navDom">
+          
+          </ul>
+      <div class="content">
+          <h2 class="title"><span class="openNav">
+              <img src="img/openBtn.png" alt="">
+            </span>小迪·文库自助服务</h2>
+        <div class="personInfo">
+          <div class="personInfomation">
+            <div class="txt">
+              <div class="txtItem">
+                <span>账号:12345678</span><span class="emailBtn">绑定邮箱</span>
+                <em>994141123@qq.com</em>
+              </div>
+              <div class="txtItem">
+                <span>密码:123456</span><span class="passwordBtn">修改密码</span>
+              </div>
+            </div>
+          </div>
+          <div class="personMessage">
+            <div class="messageItem">
+              <div class="messageIcon">
+                <img src="./img/basket-icon.png" alt="" />
+              </div>
+              <div class="messageTxt">
+                <span>剩余财富值</span>
+                <span>24790</span>
+              </div>
+            </div>
+            <div class="messageItem">
+              <div class="messageIcon">
+                <img src="./img/good-icon.png" alt="" />
+              </div>
+              <div class="messageTxt">
+                <span>已累计下载</span>
+                <span>5479<em>篇</em></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="personTable">
+          <ul>
+            <li>
+              <a href="">
+                <div class="num">
+                  <span>6 0 #</span>
+                  <span>财富值</span>
+                </div>
+                <div class="info">
+                  <h5>消化性肠道PPT</h5>
+                  <p>2019-08-15 20:18:09</p>
+                </div>
+                <span class="icon">
+                  <img src="./img/more.png" alt="">
+                </span>
+              </a>
+            </li>
+            <li>
+                <a href="">
+                  <div class="num">
+                    <span>6 0 #</span>
+                    <span>财富值</span>
+                  </div>
+                  <div class="info">
+                    <h5>消化性肠道PPT</h5>
+                    <p>2019-08-15 20:18:09</p>
+                  </div>
+                  <span class="icon">
+                    <img src="./img/more.png" alt="">
+                  </span>
+                </a>
+              </li>
+              <li>
+                  <a href="">
+                    <div class="num">
+                      <span>6 0 #</span>
+                      <span>财富值</span>
+                    </div>
+                    <div class="info">
+                      <h5>消化性肠道PPT</h5>
+                      <p>2019-08-15 20:18:09</p>
+                    </div>
+                    <span class="icon">
+                      <img src="./img/more.png" alt="">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                    <a href="">
+                      <div class="num">
+                        <span>6 0 #</span>
+                        <span>财富值</span>
+                      </div>
+                      <div class="info">
+                        <h5>消化性肠道PPT</h5>
+                        <p>2019-08-15 20:18:09</p>
+                      </div>
+                      <span class="icon">
+                        <img src="./img/more.png" alt="">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                      <a href="">
+                        <div class="num">
+                          <span>6 0 #</span>
+                          <span>财富值</span>
+                        </div>
+                        <div class="info">
+                          <h5>消化性肠道PPT</h5>
+                          <p>2019-08-15 20:18:09</p>
+                        </div>
+                        <span class="icon">
+                          <img src="./img/more.png" alt="">
+                        </span>
+                      </a>
+                    </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.pagination.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="js/mobile.js"></script>
+
+  
+    <script>
+      $(function() {
+        $("#pagination1").pagination({
+          currentPage: 1,
+          totalPage: 12,
+          callback: function(current) {
+            $("#current1").text(current);
+          }
+        });
+
+        $("#pagination2").pagination({
+          currentPage: 3,
+          totalPage: 12,
+          isShow: false,
+          count: 6,
+          prevPageText: "< 上一页",
+          nextPageText: "下一页 >",
+          callback: function(current) {
+            $("#current2").text(current);
+          }
+        });
+
+        $("#pagination3").pagination({
+          currentPage: 4,
+          totalPage: 16,
+          isShow: true,
+          count: 7,
+          homePageText: "首页",
+          endPageText: "尾页",
+          prevPageText: "上一页",
+          nextPageText: "下一页",
+          callback: function(current) {
+            $("#current3").text(current);
+          }
+        });
+
+        $("#getPage").on("click", function() {
+          var info = $("#pagination3").pagination("getPage");
+          alert("当前页数：" + info.current + ",总页数：" + info.total);
+        });
+
+        $("#setPage").on("click", function() {
+          $("#pagination3").pagination("setPage", 1, 10);
+        });
+      });
+
+
+      $('.emailBtn').click(function(){
+        $('.dialogEmail').fadeIn()
+      })
+      $('.passwordBtn').click(function(){
+        $('.dialogPassword').fadeIn()
+      })
+    </script>
+  </body>
+</html>

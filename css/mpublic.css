@@ -1,0 +1,102 @@
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: #e7edee; }
+  .container .nav {
+    width: 53.86%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    border-right: 2px solid #d2dadc;
+    box-sizing: border-box;
+    padding-top: 74px;
+    transition: all .3s; }
+    .container .nav.close {
+      transform: translateX(-100%); }
+    .container .nav.open {
+      transform: translateX(0%); }
+    .container .nav .closeBtn {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: block; }
+    .container .nav .loginout {
+      display: block;
+      position: absolute;
+      width: 124px;
+      height: 35px;
+      left: 50%;
+      margin-left: -62px;
+      bottom: 36px;
+      background: #0fb74a;
+      color: #fff;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 5px; }
+    .container .nav .logo {
+      padding-bottom: 45px; }
+    .container .nav li {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 18px;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      .container .nav li:hover i {
+        transform: scale(1.2); }
+      .container .nav li.active span {
+        color: #0fb74a; }
+      .container .nav li.active .navDown i {
+        background: url("../img/downIcon.png") no-repeat center bottom;
+        background-size: 100%; }
+      .container .nav li.active .navPerson i {
+        background: url("../img/personIcon.png") no-repeat center bottom;
+        background-size: 100%; }
+      .container .nav li.active .navInvest i {
+        background: url("../img/shopIcon.png") no-repeat center bottom;
+        background-size: 100%; }
+      .container .nav li.active .navWel i {
+        background: url("../img/welIcon.png") no-repeat center bottom;
+        background-size: 100%; }
+      .container .nav li span {
+        vertical-align: middle;
+        display: inline-block;
+        text-align: center;
+        margin-left: 20px;
+        font-size: 18px; }
+      .container .nav li .Icon {
+        width: 42px;
+        height: 42px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 50%; }
+        .container .nav li .Icon i {
+          display: block;
+          width: 100%;
+          height: 100%;
+          transition: all .2s ease-in-out; }
+      .container .nav li .navDown i {
+        background: url("../img/downIcon.png") no-repeat center top;
+        background-size: 100%; }
+      .container .nav li .navPerson i {
+        background: url("../img/personIcon.png") no-repeat center top;
+        background-size: 100%; }
+      .container .nav li .navInvest i {
+        background: url("../img/shopIcon.png") no-repeat center top;
+        background-size: 100%; }
+      .container .nav li .navWel i {
+        background: url("../img/welIcon.png") no-repeat center top;
+        background-size: 100%; }
+  .container .content {
+    width: 100%; }
+
+.border-error {
+  border-color: red !important; }
+
+.border-success {
+  border-color: #0fb74a !important; }

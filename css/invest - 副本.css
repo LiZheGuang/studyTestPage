@@ -1,0 +1,88 @@
+.notice {
+  width: 100%;
+  height: 87px;
+  line-height: 87px;
+  background: #fff;
+  border: 1px solid #d2dadc;
+  border-top: none;
+  box-sizing: border-box;
+  padding: 0 197px;
+  overflow: hidden; }
+  .notice .swiper-container {
+    height: 100%; }
+  .notice .swiper-slide {
+    height: 100%;
+    overflow: hidden; }
+
+.con {
+  width: 100%;
+  height: 86%;
+  background: #fff;
+  margin-top: 20px;
+  border: 1px solid #d2dadc;
+  position: relative; }
+  .con .conInfo {
+    color: #0fb74a;
+    text-align: center;
+    position: absolute;
+    width: 68%;
+    min-width: 965px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .con .conInfo h2 {
+      font-size: 82px; }
+    .con .conInfo p {
+      font-size: 37px;
+      letter-spacing: 35px;
+      padding-left: 12px;
+      margin: 32px 0;
+      text-align: center; }
+    .con .conInfo .conAction {
+      padding-bottom: 40px;
+      position: relative; }
+      .con .conInfo .conAction input {
+        width: 70%;
+        border: 1px solid #b8b8b8;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        font-size: 16px;
+        color: #333;
+        outline: none; }
+      .con .conInfo .conAction a {
+        width: 12%;
+        height: 36px;
+        display: inline-block;
+        color: #fff;
+        line-height: 36px;
+        border-radius: 2px; }
+      .con .conInfo .conAction .downBtn {
+        background: #29c75f;
+        margin-left: -5px; }
+      .con .conInfo .conAction .sendEmail {
+        background: #fc8229; }
+      .con .conInfo .conAction .error {
+        color: #ff0000;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-top: 14px;
+        display: block; }
+    .con .conInfo .buyCode, .con .conInfo .buyUser, .con .conInfo .getCode {
+      width: 288px;
+      height: 78px;
+      border-radius: 3px;
+      display: inline-block;
+      line-height: 78px;
+      font-size: 37px;
+      color: #fff;
+      box-shadow: 2px 2px 2px #ccc; }
+    .con .conInfo .buyCode {
+      background: #29c75f; }
+    .con .conInfo .buyUser {
+      background: #39c3da;
+      margin: 0 30px; }
+    .con .conInfo .getCode {
+      background: #ffbc11; }
