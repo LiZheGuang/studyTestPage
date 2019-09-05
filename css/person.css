@@ -6,12 +6,12 @@
 
 .personInfo .personInfomation {
   /* width: 32.5%; */
-  height: 188px;
+  /* height: 188px;
   padding: 20px 12px;
   background: #fff;
   box-sizing: border-box;
   border: 1px solid #d2dadc;
-  float: left;
+  float: left; */
 }
 
 .personInfo .personInfomation .txt {
@@ -20,49 +20,41 @@
 }
 
 .personInfo .personInfomation .txt .txtItem {
-  width: 50%;
+  /* width: 50%;
   height: 100%;
   float: left;
   position: relative;
+  border-radius: 5px; */
   border-radius: 5px;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .personInfo .personInfomation .txt .txtItem em {
-  position: absolute;
-  right: 40px;
-  font-size: 12px;
-  bottom: 6px;
+  
 }
 
 .personInfo .personInfomation .txt .txtItem span {
-  font-size: 18px;
-  color: #464545;
-  line-height: 80px;
-  text-align: center;
-  border-radius: 5px;
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  
 }
 
-.personInfo .personInfomation .txt .txtItem:nth-child(1) {
-  background: #f9f9f9;
-}
+
 
 .personInfo .personInfomation .txt .txtItem:nth-child(2) {
   background: #eeeeee;
 }
 
 .personInfo .personInfomation .change {
-  width: 100%;
+  /* width: 100%;
   height: 60px;
   line-height: 60px;
   border: 1px solid #e4e4e4;
   box-sizing: border-box;
   border-top: none;
   border-radius: 5px;
-  box-shadow: 0 2px 1px #e4e4e4;
+  box-shadow: 0 2px 1px #e4e4e4; */
 }
 
 .personInfo .personInfomation .change span {
@@ -76,18 +68,10 @@
 }
 
 .personInfo .personMessage {
-  float: right;
-  /* width: 66%; */
-  /* height: 188px; */
-  border: 1px solid #d2dadc;
-  padding: 20px 18px;
-  box-sizing: border-box;
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
+  
 }
 
-.personInfo .personMessage .messageItem {
+.personInfo .personMessage .messageItemFather .messageItem {
   /* width: 48%; */
   height: 188px;
   display: flex;
@@ -95,18 +79,18 @@
   overflow: hidden;
 }
 
-.personInfo .personMessage .messageItem .messageIcon {
+.personInfo .personMessage .messageItemFather .messageItem .messageIcon {
   /* width: 100px; */
   height: 100%;
 }
 
-.personInfo .personMessage .messageItem .messageIcon img {
+.personInfo .personMessage  .messageItemFather .messageItem .messageIcon img {
   display: block;
   margin: 0 auto;
   margin-top: 41px;
 }
 
-.personInfo .personMessage .messageItem .messageTxt {
+.personInfo .personMessage .messageItemFather .messageItem .messageTxt {
   /* flex: 1; */
   /* text-align: right; */
   text-align: center;
@@ -115,45 +99,49 @@
   box-sizing: border-box;
 }
 
-.personInfo .personMessage .messageItem .messageTxt span {
+.personInfo .personMessage  .messageItemFather .messageItem .messageTxt span {
   display: block;
 }
 
-.personInfo .personMessage .messageItem .messageTxt span:nth-child(1) {
+.personInfo .personMessage  .messageItemFather .messageItem .messageTxt span:nth-child(1) {
   font-size: 20px;
   margin: 18px 0;
 }
 
-.personInfo .personMessage .messageItem .messageTxt span:nth-child(2) {
+.personInfo .personMessage  .messageItemFather .messageItem .messageTxt span:nth-child(2) {
   font-size: 58px;
 }
 
-.personInfo .personMessage .messageItem .messageTxt em {
+.personInfo .personMessage  .messageItemFather .messageItem .messageTxt em {
   font-size: 30px;
 }
 
-.personInfo .personMessage .messageItem:nth-child(1) {
+.personInfo .personMessage .messageItemFather .messageItem:nth-child(1) {
   background: #29c75f;
+  margin-bottom: 15px;
 }
 
-.personInfo .personMessage .messageItem:nth-child(1) .messageIcon {
+.personInfo .personMessage .messageItemFather .messageItem:nth-child(1) .messageIcon {
   background: #3fcd6f;
 }
 
-.personInfo .personMessage .messageItem:nth-child(2) {
-  background: #39c3da;
+.personInfo .personMessage .messageItemFather .downClass {
+  background: #39c3da !important;
 }
 
-.personInfo .personMessage .messageItem:nth-child(2) .messageIcon {
-  background: #4dc9de;
+.personInfo .personMessage .messageItemFather .downClass .messageIcon {
+  background: #4dc9de !important;
 }
 
 .personTable {
   width: 100%;
-  height: 73%;
+  /* height: 73%; */
   background: #fff;
   margin-top: 12px;
   box-sizing: border-box;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px;
   /* padding-top: 30px; */
 }
 
@@ -317,4 +305,96 @@
 }
 .widthOnl{
   width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+
 }
+
+.txtBox{
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  
+
+}
+.emailBtnBox{
+  height: 40px;;
+  border-radius: 5px;
+  margin-top: 15px;
+
+}
+.tdMsg{
+  width: 100px ;
+  margin: auto;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+    .personInfo .personInfomation .txt .txtItem {
+      margin-bottom: 10px;
+    }
+    .txtBox{
+      background: white;
+      padding: 20px;
+      height: inherit;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+    .emailBtnBox{
+      margin-top: 10px;
+    }
+
+    .personInfo .personMessage .messageItemFather .messageItem:nth-child(1) {
+      margin-bottom: 10px;
+    }
+    .tdMsg{
+      width: 150px ;
+      margin: auto;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+  }
+
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+  .personInfo .personMessage .messageItem .messageTxt {
+
+    text-align: center;
+    color: #fff;
+    padding-right: 25px;
+    box-sizing: border-box;
+    margin-left: 20px;
+  }
+  .txtBox {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    height: 240px;
+  }
+  .emailBtnBox{
+    height: 40px;;
+    border-radius: 5px;
+    margin-top: 36px;
+  }
+  .tdMsg{
+    width: 100%;
+  }
+  .personInfo .personMessage  .messageItemFather .messageItem .messageTxt span:nth-child(2) {
+    font-size: 40px;
+  }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) { 
+
+  .personInfo .personMessage  .messageItemFather .messageItem .messageTxt span:nth-child(2) {
+    font-size: 56px;
+  }
+ }

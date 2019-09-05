@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>小迪文库</title>
   <link rel="stylesheet" href="css/reset.css" />
@@ -12,13 +12,70 @@
   <link rel="stylesheet" href="css/public.css" />
   <link rel="stylesheet" href="css/jquery.pagination.css" />
   <link rel="stylesheet" href="css/person.css" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <style>
+    html{
+      height: auto;
+    }
+  </style>
 </head>
 
 <body>
   <div class="containerHtml">
-    <div class="dialogEmail">
+    <!-- 绑定邮箱 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">绑定邮箱:</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="exampleInputName2">请输入邮箱</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="请输入您的邮箱">
+            </div>
+            <p class="text-danger">绑定邮箱后可将邮箱作为账号登录本平台！并且支持下载文档直接发送到您绑定的邮箱</p>
+            <!-- <p>One fine body&hellip;</p> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">确认绑定</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+    <!-- 绑定邮箱 -->
+    <!-- 修改密码 -->
+    <div class="modal fade" id="editPassWord" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">修改密码:</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="exampleInputName2">新密码</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="输入您的密码">
+            </div>
+            <p class="text-danger">密码修改后将只有您自己知道！修改后如果忘记，将无法找回请谨慎修改！</p>
+            <!-- <p>One fine body&hellip;</p> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">确认绑定</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+    <!-- 修改密码 -->
+    <!-- /.modal -->
+    <!-- <div class="dialogEmail">
       <h4>绑定邮箱: <img src="./img/close2.png" alt=""></h4>
       <p>输入邮箱: <input type="text"></p>
       <button>绑定</button>
@@ -35,58 +92,90 @@
         密码修改后将只有您自己知道！修改后如果忘记，将无法找回</br>
         请谨慎修改！
       </span>
-    </div>
-    <div class="nav" id="navLoad">
+    </div> -->
+    <div class="nav clearfix" id="navLoad">
 
     </div>
-    <div class="content container">
-      <div class="personInfo ">
+    <div class="clearfix visible-xs-block"></div>
+    <div class="content container clearfix">
+      <div class="personInfo  clearfix">
         <div class="row ">
-        <div class="personInfomation col-md-4 col-sm-12 col-xs-12">
-          <div class="txt">
-            <div class="txtItem">
-              <span>账号:12345678</span>
-              <em>994141123@qq.com</em>
-            </div>
-            <div class="txtItem">
-              <span>密码:123456</span>
-            </div>
-          </div>
-          <div class="change">
-            <span class="emailBtn">绑定邮箱</span>
-            <span class="passwordBtn">修改密码</span>
-          </div>
-        </div>
-        <div class="personMessage  col-md-8 col-sm-12 col-xs-12" >
-          <div class="widthOnl container">
 
-          <div class="messageItem container-fluid col-xs-12  col-md-6 col-sm-6 ">
-            <div class="clearfix visible-xs-block"></div>
-            <div class="messageIcon col-xs-4" >
-              <img src="./img/basket-icon.png" alt="" />
+          <div class="personInfomation col-md-4 col-sm-12 col-xs-12">
+            <div class="txtBox">
+
+              <div class="txt">
+                <div class="col-md-6  col-sm-12 col-xs-12">
+
+                  <div class="txtItem bg-info">
+                    <p>账号：123456789</p>
+                    <p>994141123@qq.com</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+
+                  <div class="txtItem bg-danger">
+                    <p>密码:123456</p>
+                  </div>
+                </div>
+              </div>
+              <div class="change clearfix">
+
+                <div class="col-md-6">
+                  <button type="button" data-toggle="modal" data-target="#myModal"
+                    class="btn-block emailBtnBox btn-success emailBtn">绑定邮箱</button>
+                </div>
+                <div class="col-md-6">
+                  <button type="button" data-toggle="modal" data-target="#editPassWord"
+                    class="btn-block emailBtnBox btn-danger passwordBtn">修改密码</button>
+                </div>
+
+
+                <!-- <span class="emailBtn">绑定邮箱</span> -->
+                <!-- <span class="passwordBtn">修改密码</span> -->
+              </div>
             </div>
-            <div class="messageTxt col-xs-8">
-              <span >剩余财富值</span>
-              <span >24790</span>
-            </div>
+
           </div>
-          <div class="messageItem  container-fluid col-xs-12 col-md-6 col-sm-6">
-            <div class="messageIcon">
-              <img src="./img/good-icon.png" alt="" />
+
+          <div class="personMessage  col-md-8 col-sm-12 col-xs-12">
+            <div class="widthOnl clearfix ">
+              <div class=" messageItemFather col-xs-12  col-md-6 col-sm-12 ">
+                <div class="messageItem ">
+
+                  <div class="clearfix visible-xs-block"></div>
+                  <div class="messageIcon col-xs-4 col-md-4 row">
+                    <img src="./img/basket-icon.png" alt="" />
+                  </div>
+                  <div class="messageTxt col-xs-8 col-md-8">
+                    <span>剩余财富值</span>
+                    <span>24790</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-xs-12  col-md-6 col-sm-12 messageItemFather ">
+                <div class="messageItem downClass">
+                  <div class="messageIcon col-xs-4 col-md-4 row">
+                    <img src="./img/good-icon.png" alt="" />
+                  </div>
+                  <div class="messageTxt col-xs-8 col-md-8">
+                    <span>已累计下载</span>
+                    <span>5479<em>篇</em></span>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <div class="messageTxt">
-              <span>已累计下载</span>
-              <span>5479<em>篇</em></span>
-            </div>
+
           </div>
         </div>
 
-        </div>
       </div>
 
-      </div>
-      <div class="personTable table-responsive col-md-12 ">
-        <table class="table">
+      <div class="personTable table-responsive clearfix ">
+
+        <table class="table clearfix">
           <thead>
             <tr>
               <th class="title-table corlorTr ">文章标题</th>
@@ -95,67 +184,131 @@
               <th class=" corlorTr">下载时间</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="clearfix">
             <tr>
               <td>真心话大冒险经典问题</td>
-              <td>https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr</td>
-              <td>30</td>
-              <td>2019-8-17 20:04:38</td>
-            </tr>
-            <tr>
-              <td>真心话大冒险经典问题</td>
-              <td>https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr</td>
-              <td>30</td>
-              <td>2019-8-17 20:04:38</td>
-            </tr>
-            <tr>
-              <td>真心话大冒险经典问题</td>
-              <td>https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr</td>
-              <td>30</td>
-              <td>2019-8-17 20:04:38</td>
-            </tr>
-            <tr>
-              <td>真心话大冒险经典问题</td>
-              <td>https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
               </td>
               <td>30</td>
               <td>2019-8-17 20:04:38</td>
             </tr>
             <tr>
               <td>真心话大冒险经典问题</td>
-              <td>https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr</td>
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
+              </td>
               <td>30</td>
               <td>2019-8-17 20:04:38</td>
             </tr>
             <tr>
               <td>真心话大冒险经典问题</td>
-              <td>https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr</td>
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
+              </td>
               <td>30</td>
               <td>2019-8-17 20:04:38</td>
             </tr>
             <tr>
               <td>真心话大冒险经典问题</td>
-              <td>https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?frhttps://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr</td>
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
+              </td>
               <td>30</td>
               <td>2019-8-17 20:04:38</td>
             </tr>
             <tr>
               <td>真心话大冒险经典问题</td>
-              <td>https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?frhttps://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr</td>
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
+              </td>
               <td>30</td>
               <td>2019-8-17 20:04:38</td>
             </tr>
+            <tr>
+              <td>真心话大冒险经典问题</td>
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
+              </td>
+              <td>30</td>
+              <td>2019-8-17 20:04:38</td>
+            </tr>
+            <tr>
+              <td>真心话大冒险经典问题</td>
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
+              </td>
+              <td>30</td>
+              <td>2019-8-17 20:04:38</td>
+            </tr>
+            <tr>
+              <td>真心话大冒险经典问题</td>
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
+              </td>
+              <td>30</td>
+              <td>2019-8-17 20:04:38</td>
+            </tr>
+            <tr>
+              <td>真心话大冒险经典问题</td>
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
+              </td>
+              <td>30</td>
+              <td>2019-8-17 20:04:38</td>
+            </tr>
+            <tr>
+              <td>真心话大冒险经典问题</td>
+              <td>
+                <div class="tdMsg">
+                  https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                </div>
+              </td>
+              <td>30</td>
+              <td>2019-8-17 20:04:38</td>
+            </tr>
+            <tr >
+                <td>真心话大冒险经典问题</td>
+                <td>
+                  <div class="tdMsg">
+                    https://wenku.baidu.com/view/ee3d0d5d9b6648d7c0c714623.html?fr
+                  </div>
+                </td>
+                <td>30</td>
+                <td>2019-8-17 20:04:38</td>
+              </tr>
           </tbody>
         </table>
-
-        <div class="box">
-          <div id="pagination1" class="page"></div>
-        </div>
       </div>
+
+      <div class="box">
+        <div id="pagination1" class="page"></div>
+      </div>
+
     </div>
   </div>
   <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
   <script src="js/jquery.pagination.min.js"></script>
   <script src="js/swiper-3.4.2.jquery.min.js"></script>
@@ -207,12 +360,12 @@
       });
     });
 
-    $('.emailBtn').click(function () {
-      $('.dialogEmail').fadeIn()
-    })
-    $('.passwordBtn').click(function () {
-      $('.dialogPassword').fadeIn()
-    })
+    // $('.emailBtn').click(function () {
+    //   $('.dialogEmail').fadeIn()
+    // })
+    // $('.passwordBtn').click(function () {
+    //   $('.dialogPassword').fadeIn()
+    // })
     $(".dialogEmail h4 img").click(function () {
       $(".dialogEmail").hide()
     })
