@@ -33,6 +33,10 @@ html, body {
   padding: 0;
   color: #666666;
 }
+
+.nav>li>a:hover{
+  background: transparent !important;
+}
 .containerHtml .nav .logo {
   padding-bottom: 45px;
 }

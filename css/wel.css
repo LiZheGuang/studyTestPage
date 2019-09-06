@@ -78,3 +78,10 @@
         .textTitle{
           color: #d9534f;
         }
+
+        .shopDetail .caption p:nth-child(3){
+          text-align: center;
+        }
+        .shopDetail .caption .textTitle{
+          text-align: center;
+        }

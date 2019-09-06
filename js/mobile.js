@@ -36,7 +36,7 @@ window.onload = function () {
     htmlcodeInit += '<span class="txt">充值兑换</span>'
     htmlcodeInit += '</a>'
     htmlcodeInit += '</li>'
-    htmlcodeInit += '<li class="navItem wel" data-page="/m-invest.html?type=wel">'
+    htmlcodeInit += '<li class="navItem wel" data-page="/m-wel.html?type=wel">'
     htmlcodeInit += '<a href="javascript:;">'
     htmlcodeInit += '<span class="Icon navWel">'
     htmlcodeInit += '<i></i>'
