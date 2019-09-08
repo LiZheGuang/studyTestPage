@@ -54,7 +54,7 @@
 }
 
 .con .conInfo .conAction input {
-  width: 71.5%;
+  width: 100%;
   border: 1px solid #b8b8b8;
   height: 36px;
   line-height: 36px;
@@ -66,7 +66,7 @@
 }
 
 .con .conInfo .conAction a {
-  width: 132px;
+  /* width: 132px; */
   height: 36px;
   display: inline-block;
   color: #fff;
@@ -76,14 +76,14 @@
 
 .con .conInfo .conAction .downBtn {
   background: #29c75f;
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 
 .con .conInfo .conAction .sendEmail {
   background: #fc8229;
 }
 
-.con .conInfo .conAction .error {
+.con .conInfo  .error {
   color: #ff0000;
   font-size: 18px;
   letter-spacing: 2px;
@@ -97,12 +97,39 @@
   border-bottom: 1px solid #626262;
 }
 
-@media screen and (max-width: 300px) {
-  /* body {
-      background-color:lightblue;
-  } */
-}
 
 .sousuoBox{
   margin-top: 20px;
+}
+.rightButton{
+  width: 30%;
+  display: inline-block;
+  margin-top: 10px;
+
+  
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+
+  .rightButton{
+    margin-top: 0px;
+  }
+  .con .conInfo .conAction .sendEmail {
+    margin-left: 10px;;
+  }
+  
+}
+
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) { 
+
+
 }
